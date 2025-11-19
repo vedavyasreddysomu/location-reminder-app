@@ -1,0 +1,43 @@
+name: location_reminder_app
+description: A cross-platform mobile application that sends alarm notifications when approaching a destination.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^2.4.0
+  location: ^5.0.0
+  flutter_local_notifications: ^14.0.0
+  workmanager: ^0.5.1
+  provider: ^6.0.0
+  sqflite: ^2.2.0
+  path: ^1.8.0
+  geolocator: ^10.0.0
+  geocoding: ^3.0.0
+  permission_handler: ^11.0.0
+  intl: ^0.18.0
+  audio_session: ^0.1.13
+  just_audio: ^0.9.34
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sounds/alarm.mp3
+    - assets/images/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
